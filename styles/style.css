@@ -1,10 +1,109 @@
-/*
+/* 
 Colors to use:
 dark blue: #06365f
-light blue: #1c5380
-*/
+light blue: #1c5380 */
+* {
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  font: 200 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #256497 50%, #ffffff 50%);
+
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10rem;
+}
+.right {
+  padding-left: 3rem;
+}
+.right-up {
+  display: flex;
+}
+.button {
+  align-self: center;
+  padding-left: 3rem;
+  position: relative;
+}
+.home-img {
+  vertical-align: middle;
+  position: absolute;
+  z-index: 1;
+  top: 0.7rem;
+  right: 3.5rem;
+}
+
+input {
+  padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+}
+input.text {
+  background-color: #4781ad;
+  color: white;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: none;
+}
+
+.right-middle-box {
+  height: 65vh;
+  position: relative;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.right-middle-text {
+  position: absolute;
+  width: 80%;
+  left: 45%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.right-middle-text h1 {
+  font-weight: bold;
+  color: #1c5380;
+  font-size: 1.5rem;
+}
+
+.right-middle-text p {
+  padding: 0.1rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.download {
+  position: absolute;
+  top: 22rem;
+  left: 2rem;
+}
+
+.download .android {
+  margin-left: 1.5rem;
+}
+footer {
+  margin-top: 5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-weight: 700;
+  color: #4684bb;
+  list-style: none;
+  font-size: 0.75rem;
+}
+footer ul li {
+  padding: 1rem;
+  z-index: 1;
+}
+.footer-color-change {
+  color: #b3afaf;
 }
